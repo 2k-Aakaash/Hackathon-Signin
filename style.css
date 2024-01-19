@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'Tommy-Light';
+    src: url('https://ik.imagekit.io/026k2i7ys/fonts/MADE%20TOMMY%20Light_PERSONAL%20USE.woff?updatedAt=1705584800309') format('woff');
+    }
+
+@font-face {
+    font-family: 'Tommy-Black';
+    src: url('https://ik.imagekit.io/026k2i7ys/fonts/MADE%20TOMMY%20Black_PERSONAL%20USE.woff?updatedAt=1705584800352') format('woff');
+    }
+
+@font-face {
+    font-family: 'Tommy-Medium';
+    src: url('https://ik.imagekit.io/026k2i7ys/fonts/MADE%20TOMMY%20Medium_PERSONAL%20USE.woff?updatedAt=1705584800728') format('woff');
+    }
+
+@font-face {
+    font-family: 'Tommy-ExtraBold';
+    src: url('https://ik.imagekit.io/026k2i7ys/fonts/MADE%20TOMMY%20ExtraBold_PERSONAL%20USE.woff?updatedAt=1705584800762') format('woff');
+    } 
+
+@font-face {
+    font-family: 'Tommy-Regular';
+    src: url('https://ik.imagekit.io/026k2i7ys/fonts/MADE%20TOMMY%20Regular_PERSONAL%20USE.woff?updatedAt=1705584800828') format('woff');
+    } 
+
+@font-face {
+    font-family: 'Tommy-Thin';
+    src: url('https://ik.imagekit.io/026k2i7ys/fonts/MADE%20TOMMY%20Thin_PERSONAL%20USE.woff?updatedAt=1705584800910') format('woff');
+    }
+
+@font-face {
+    font-family: 'Tommy-Bold';
+    src: url('https://ik.imagekit.io/026k2i7ys/fonts/MADE%20TOMMY%20Thin_PERSONAL%20USE.woff?updatedAt=1705584800910') format('woff');
+    }
+
+*{
+    font-family: 'Tommy-Regular';
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.signup-container {
+    flex: 1;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.signup-div {
+    max-width: 400px;
+    margin: auto;
+}
+
+.image-div {
+    text-align: center;
+    
+}
+
+img {
+    /* max-width: 100%; */
+    min-width: 50%;
+    max-width: 500px;
+    max-height: 400px;
+    border-radius: 30px;
+    /* height: 100vh; */
+}
+
+@media screen and (max-width: 767px) {
+    .main-container {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .signup-container {
+        order: 2;
+        height: auto;
+    }
+
+    .image-container {
+        order: 1;
+        display: none;
+    }
+}
+
+.h1-text{
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.p-text{
+    color: #7b7b7b;
+    text-align: center;
+    font-size: 14px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.google-login{
+    background-color: transparent;
+    border: 1px solid rgb(169, 169, 169);
+    border-radius: 30px;
+    padding: 10px 80px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.google-login svg {
+    margin-right: 10px;
+}
+
+.separation {
+    position: relative;
+    margin: 20px 0;
+    margin-bottom: 30px;
+  }
+  
+  .line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #ccc;
+  }
+  
+  .or-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff; /* Set the background color to match the background */
+    padding: 0 10px; /* Adjust padding as needed */
+    color: #555;
+  }
+  
+
+.login-with-google{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.signup-form{
+    margin-top: 60px;
+}
+
+label, input{
+    display: block;
+}
+
+.asterisk-span{
+    color: rgb(234 110 126);
+}
+
+.input-text{
+    background-color: transparent;
+    border: 1px solid rgb(169, 169, 169);
+    border-radius: 30px;
+    padding: 10px 140px 10px 20px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: text;
+}
+
+.name-label{
+    margin-bottom: 5px;
+}
+
+.email-label, .password-label{
+    margin: 5px 0px;
+}
+
+::-webkit-input-placeholder{
+    font-size: 14px;
+}
+
+.signup-button-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+.signup-button{
+    background-color: #202020;
+    color: #fff;
+    border: none;
+    padding: 10px 145px;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: 0.2s ease-in-out color;
+    margin-top: 30px;
+}
+
+.signup-button:hover{
+    cursor: pointer;
+    border: 1px solid #7b7b7b;
+    color: #000;
+    background-color: #fff;
+}
+
+.another-way{
+    font-size: 14px;
+}
+
+.login-text-span{
+    color: #ae7d12;
+    cursor: pointer;
+}
+
+.login-text-span:hover{
+    text-decoration: underline;
+}
+
