@@ -84,6 +84,7 @@ img {
     /* height: 100vh; */
 }
 
+
 @media screen and (max-width: 767px) {
     .main-container {
         flex-direction: column-reverse;
@@ -98,6 +99,30 @@ img {
     .image-container {
         order: 1;
         display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .signup-container {
+        scale: 0.8;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .signup-container{
+        scale: 0.7;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .signup-container{
+        scale: 0.6;
+        display: flex;
+        justify-content: center;
     }
 }
 
