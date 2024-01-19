@@ -84,7 +84,6 @@ img {
     /* height: 100vh; */
 }
 
-
 @media screen and (max-width: 767px) {
     .main-container {
         flex-direction: column-reverse;
@@ -125,7 +124,6 @@ img {
         justify-content: center;
     }
 }
-
 
 .h1-text{
     font-size: 26px;
